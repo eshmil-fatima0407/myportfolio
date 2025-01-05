@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Typewriter Effect */
+    .typewriter {
+      font-family: 'Courier New', Courier, monospace; /* Mimics a typewriter font */
+      color: #ffcc00; /* Mustard yellow */
+      font-size: 2.5rem;
+      overflow: hidden;
+      border-right: 2px solid #ffcc00; /* Blinking cursor effect */
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 2px;
+      animation: typing 3s steps(15, end), blink 0.5s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%; /* Matches the content length */
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1 class="logo">My Portfolio</h1>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="home">
+        <div class="typewriter">I AM A STUDENT </div> <!-- Typewriter Effect -->
+        <div class="profile-container">
+          <!-- Profile Picture -->
+          <img src="assets/WhatsApp Image 2025-01-05 at 8.14.52 PM.jpeg" alt="Profile Picture" class="profile-pic">
+          
+          <!-- Info Section -->
+          <div class="info">
+            <h3 class="name">Eshmil Fatima</h3>
+            <p class="education">
+              <strong>Education:</strong> 
+              I completed my Matriculation in Computer Science and am currently pursuing Intermediate in Pre-Engineering.
+            </p>
+            <p class="course">
+              <strong>Course:</strong> 
+              I am enrolled in the <em>Introduction to Programming</em> course at Saylani SMIT to enhance my skills.
+            </p>
+            <p class="bio">
+              My enthusiasm for technology and problem-solving drives me to explore and excel in web development. 
+              I aim to create user-friendly, visually appealing, and efficient websites that make a difference.
+            </p>
+          </div>
+        </div>
+        <p class="signature">Eshmil Fatima...</p>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
