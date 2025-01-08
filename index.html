@@ -1,81 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Typewriter Effect */
-    .typewriter {
-      font-family: 'Courier New', Courier, monospace; /* Mimics a typewriter font */
-      color: #ffcc00; /* Mustard yellow */
-      font-size: 2.5rem;
-      overflow: hidden;
-      border-right: 2px solid #ffcc00; /* Blinking cursor effect */
-      white-space: nowrap;
-      margin: 0 auto;
-      letter-spacing: 2px;
-      animation: typing 3s steps(15, end), blink 0.5s step-end infinite alternate;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">My Portfolio</h1>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%; /* Matches the content length */
-      }
-    }
+      <main class="content">
+        <section id="home">
+          <div class="typewriter">I AM A STUDENT</div>
+          <!-- Typewriter Effect -->
+          <div class="profile-container">
+            <!-- Profile Picture -->
+            <img
+              src="assets/WhatsApp Image 2025-01-05 at 8.14.52 PM.jpeg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
 
-    @keyframes blink {
-      50% {
-        border-color: transparent;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <nav class="navbar">
-      <h1 class="logo">My Portfolio</h1>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#biography">Biography</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <main class="content">
-      <section id="home">
-        <div class="typewriter">I AM A STUDENT </div> <!-- Typewriter Effect -->
-        <div class="profile-container">
-          <!-- Profile Picture -->
-          <img src="assets/WhatsApp Image 2025-01-05 at 8.14.52 PM.jpeg" alt="Profile Picture" class="profile-pic">
-          
-          <!-- Info Section -->
-          <div class="info">
-            <h3 class="name">Eshmil Fatima</h3>
-            <p class="education">
-              <strong>Education:</strong> 
-              I completed my Matriculation in Computer Science and am currently pursuing Intermediate in Pre-Engineering.
-            </p>
-            <p class="course">
-              <strong>Course:</strong> 
-              I am enrolled in the <em>Introduction to Programming</em> course at Saylani SMIT to enhance my skills.
-            </p>
-            <p class="bio">
-              My enthusiasm for technology and problem-solving drives me to explore and excel in web development. 
-              I aim to create user-friendly, visually appealing, and efficient websites that make a difference.
-            </p>
+            <!-- Info Section -->
+            <div class="info">
+              <h3 class="name">Eshmil Fatima</h3>
+              <p class="education">
+                <strong>Education:</strong>
+                I completed my Matriculation in Computer Science and am
+                currently pursuing Intermediate in Pre-Engineering.
+              </p>
+              <p class="course">
+                <strong>Course:</strong>
+                I am enrolled in the <em>Introduction to Programming</em> course
+                at Saylani SMIT to enhance my skills.
+              </p>
+              <p class="bio">
+                My enthusiasm for technology and problem-solving drives me to
+                explore and excel in web development. I aim to create
+                user-friendly, visually appealing, and efficient websites that
+                make a difference.
+              </p>
+            </div>
           </div>
-        </div>
-        <p class="signature">Eshmil Fatima...</p>
-      </section>
-    </main>
-  </div>
-</body>
-<script src="script.js"></script>
+          <p class="signature">Eshmil Fatima...</p>
+        </section>
+
+        <section id="biography" class="biography-section">
+          <h2>Biography</h2>
+          <p>
+            Hello! I'm <strong>Eshmil Fatima</strong>, a passionate and driven
+            individual currently pursuing my intermediate education in
+            Pre-Engineering. My journey began with a deep curiosity about how
+            things work, particularly in the realm of technology and
+            programming.
+          </p>
+          <p>
+            I have a solid foundation in Computer Science, having completed my
+            matriculation with distinction. Currently, I'm enrolled in the
+            <em>Introduction to Programming</em> course at Saylani SMIT, where
+            I'm learning to turn my ideas into functional code.
+          </p>
+          <p>
+            Apart from academics, I enjoy exploring creative projects that
+            combine aesthetics with functionality. I'm enthusiastic about
+            learning and believe in continuous growth, whether it's through
+            experimenting with new technologies or refining my problem-solving
+            skills.
+          </p>
+          <blockquote>
+            "Technology is best when it brings people together." - Matt
+            Mullenweg
+          </blockquote>
+          <p>
+            When I'm not studying or coding, you can find me reading books,
+            sketching, or engaging in collaborative projects that challenge me
+            to think outside the box.
+          </p>
+        </section>
+        <section id="portfolio" class="portfolio-section">
+          <h2>Portfolio</h2>
+          <div class="portfolio-grid">
+            <!-- Website 1 -->
+            <div class="portfolio-item">
+              <img src="assets/website 1.PNG" alt="Website 1" class="portfolio-img" />
+              <h3>Calculator using javascript </h3>
+              <p>A simple, JavaScript-powered calculator showcasing essential functionality and clean design.</p>
+              <a href="https://calculator-by-eshmil.netlify.app/" target="_blank" class="btn">View Website</a>
+            </div>
+        
+            <!-- Website 2 -->
+            <div class="portfolio-item">
+              <img src="assets/website 2.PNG" alt="Website 2" class="portfolio-img" />
+              <h3>Contact page </h3>
+              <p>A contact page using HTML and CSS with a clean interface.</p>
+              <a href="https://contact-page-by-eshmil.netlify.app/" target="_blank" class="btn">View Website</a>
+            </div>
+        
+            <!-- Website 3 -->
+            <div class="portfolio-item">
+              <img src="assets/website 3.PNG" alt="Website 3" class="portfolio-img" />
+              <h3>Headphones website</h3>
+              <p>A simple and basic website to showcase my skills in web development using HTML,CSS and JAVASCRIPT.</p>
+              <a href="https://first-headphones-website-by-eshmil.netlify.app/" target="_blank" class="btn">View Website</a>
+            </div>
+          </div>
+        </section>
+        <section id="services" class="services-section">
+          <h2>Services</h2>
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-item">
+              <i class="service-icon fas fa-code"></i>
+              <h3>Static Website Creation</h3>
+              <p>
+                Building visually appealing and responsive static websites using HTML and CSS.
+              </p>
+            </div>
+        
+            <!-- Service 2 -->
+            <div class="service-item">
+              <i class="service-icon fas fa-cogs"></i>
+              <h3>Basic JavaScript Features</h3>
+              <p>
+                Adding simple interactivity to your website using basic JavaScript functionalities.
+              </p>
+            </div>
+        
+            <!-- Service 3 -->
+            <div class="service-item">
+              <i class="service-icon fas fa-mobile-alt"></i>
+              <h3>Responsive Design</h3>
+              <p>
+                Ensuring your website looks great on all devices, from desktops to smartphones.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+          <h2>Contact Me</h2>
+          <p class="contact-intro">
+            Feel free to reach out for collaborations or any inquiries!
+          </p>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </section>
+        <footer class="footer">
+          <div class="footer-content">
+            <h3>My Portfolio</h3>
+            <p>
+              Thank you for visiting my portfolio. Feel free to connect with me through
+              the links below!
+            </p>
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/eshmil-fatima0407" target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/eshmil-fatima-46142b343/" target="_blank"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="mailto:eshmilfatima377@gmail.com"
+                  ><i class="fas fa-envelope"></i> Email</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Eshmil Fatima. All rights reserved.</p>
+          </div>
+        </footer>
+                
+        
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
