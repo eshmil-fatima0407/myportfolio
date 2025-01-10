@@ -1,4 +1,4 @@
-/* General Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 
-/* Navbar Styles */
+
 .navbar {
   width: 250px;
   background: linear-gradient(135deg, #222, #000000);
@@ -79,16 +79,12 @@ body {
 
 
 
-/* Typewriter Effect */
 .typewriter {
   font-family: 'Courier New', Courier, monospace;
-  /* Mimics a typewriter font */
   color: #ffcc00;
-  /* Mustard yellow */
   font-size: 2.5rem;
   overflow: hidden;
   border-right: 2px solid #ffcc00;
-  /* Blinking cursor effect */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 2px;
@@ -102,7 +98,7 @@ body {
 
   to {
     width: 100%;
-    /* Matches the content length */
+   
   }
 }
 
@@ -112,7 +108,7 @@ body {
   }
 }
 
-/* Content Section */
+
 .content {
   flex-grow: 1;
   padding: 40px;
@@ -193,7 +189,7 @@ p {
   border-radius: 5px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -314,8 +310,7 @@ blockquote:after {
 .biography-section p {
   font-size: 1rem;
 }
-/* Portfolio Section */
-/* Portfolio Section */
+
 .portfolio-section {
   margin-top: 50px;
   padding: 40px;
@@ -339,7 +334,7 @@ blockquote:after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  align-items: stretch; /* Ensures equal heights */
+  align-items: stretch;
 }
 
 .portfolio-item {
@@ -350,9 +345,9 @@ blockquote:after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Distribute space evenly */
-  height: 100%; /* Ensure all items take up equal height */
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%;
 }
 
 .portfolio-item:hover {
@@ -380,7 +375,7 @@ blockquote:after {
   color: #f4f4f4;
   line-height: 1.6;
   margin-bottom: 20px;
-  flex-grow: 1; /* Allows the paragraph to take extra space */
+  flex-grow: 1;
 }
 
 .btn {
@@ -392,7 +387,7 @@ blockquote:after {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: auto; /* Push button to the bottom */
+  margin-top: auto; 
 }
 
 .btn:hover {
@@ -400,7 +395,7 @@ blockquote:after {
   transform: scale(1.1);
 }
 
-/* Responsive Styles for Portfolio */
+
 @media (max-width: 768px) {
   .portfolio-section h2 {
     font-size: 2.5rem;
@@ -418,13 +413,13 @@ blockquote:after {
     font-size: 0.9rem;
   }
 }
-/* Services Section */
+
 .services-section {
-  min-height: 100vh; /* Ensures it fills the screen height */
-  display: flex; /* Enables flexible alignment */
-  flex-direction: column; /* Ensures vertical stacking */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
   padding: 140px;
   background-color: #1a1a1a;
   border-radius: 10px;
@@ -447,7 +442,7 @@ blockquote:after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  align-items: stretch; /* Ensures equal heights */
+  align-items: stretch; 
 }
 
 .service-item {
@@ -484,7 +479,7 @@ blockquote:after {
   line-height: 1.6;
 }
 
-/* Responsive Styles for Services Section */
+
 @media (max-width: 768px) {
   .services-section h2 {
     font-size: 2.5rem;
@@ -499,7 +494,7 @@ blockquote:after {
   }
 }
 
-/* Contact Section */
+
 .contact-section {
   margin-top: 30px;
   padding: 200px;
@@ -586,7 +581,7 @@ textarea {
   transform: scale(1.1);
 }
 
-/* Responsive Styles for Contact Section */
+
 @media (max-width: 768px) {
   .contact-section h2 {
     font-size: 2.5rem;
@@ -600,7 +595,7 @@ textarea {
     font-size: 0.9rem;
   }
 }
-/* Footer Section */
+
 .footer {
   background-color: #121212;
   color: #f4f4f4;
@@ -653,7 +648,7 @@ textarea {
   color: #cccccc;
 }
 
-/* Responsive Styles for Footer */
+
 @media (max-width: 768px) {
   .footer-content h3 {
     font-size: 1.8rem;
